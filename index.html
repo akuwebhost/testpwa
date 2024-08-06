@@ -703,18 +703,18 @@
       rel="stylesheet"
       href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
     />
-	   <link rel="manifest" href="/manifest.json">
+	   <link rel="manifest" href="https://akuwebhost.github.io/testpwa/manifest.json">
   </head>
   <body>
 	       <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/pwa.js')
+            navigator.serviceWorker.register('https://akuwebhost.github.io/testpwa/pwa.js')
                 .then(function () {
                     console.log('Service Worker Registered');
                 });
         }
     </script>
-    <script src="/install.js"></script>
+    <script src="https://akuwebhost.github.io/testpwa/install.js"></script>
     <link rel="stylesheet" href="./style.css" />
     <div>
       <link href="./index.css" rel="stylesheet" />
