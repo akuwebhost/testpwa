@@ -1,15 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
- <link rel="manifest" href="manifest.json">
-     <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('pwa.js')
-                .then(function () {
-                    console.log('Service Worker Registered');
-                });
-        }
-    </script>
-    <script src="install.js"></script>
   <head>  
     <title>Scientific Oily Spider</title>
     <meta property="og:title" content="Scientific Oily Spider" />
@@ -713,6 +703,16 @@
       rel="stylesheet"
       href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
     />
+	   <link rel="manifest" href="manifest.json">
+     <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('pwa.js')
+                .then(function () {
+                    console.log('Service Worker Registered');
+                });
+        }
+    </script>
+    <script src="install.js"></script>
   </head>
   <body>
     <link rel="stylesheet" href="./style.css" />
